@@ -12,7 +12,7 @@ import { CarTableComponent } from '../../components/car-table/car-table.componen
 export class DashboardComponent implements OnInit {
 
   ngOnInit() {
-
+    
   }
 
 }

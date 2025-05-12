@@ -1,8 +1,9 @@
 type Car = {
-    vin: string,
-    odometro: string,
-    nivelCombustivel: string,
-    status: string,
-    lat: number,
-    long: number
+  id: number
+  vehicle: string
+  totalVolume: number
+  connected: number
+  softwareUpdates: number
+  vin: string
+  img: string
 }

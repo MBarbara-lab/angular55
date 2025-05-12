@@ -33,11 +33,6 @@ export class LoginFormComponent {
           return
         }
 
-        if (e.status === 500) {
-          alert ("Erro interno! Tente novamente mais tarde.")
-          return
-        }
-
         alert ("Erro interno! Tente novamente mais tarde.")
       },
       next: () => {

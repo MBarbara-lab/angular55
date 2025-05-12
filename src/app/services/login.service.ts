@@ -12,15 +12,13 @@ export class LoginService {
   http = inject(HttpClient)
 
   login(username: string, password: string): Observable<UserInfos> {
-    /* adicionar
-   .pipe(
+    return this.http.post<UserInfos>("http://localhost:3001/login", { nome: username, senha: password})
+    .pipe(
       tap(
         (user) => {
-          sessionStorage.setItem("email", user.email)
+          sessionStorage.setItem("username", user.name)
         }
       )
     )
-    no fim dessa linha de código*/
-    return this.http.post<UserInfos>("http://localhost:3001/login", {username, password})
   }
 }

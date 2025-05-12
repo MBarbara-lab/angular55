@@ -43,6 +43,9 @@ nav {
   background-color: #adadad;
   color: var(--blue);
   font-weight: 500;
+}
+
+.sidebar__link > a {
   text-decoration: none;
 }
 

@@ -21,6 +21,12 @@
     font-size: 2.2rem;
 }
 
+.car-model {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 .car-img {
-    width: 70%;
+    width: 60%;
 }
