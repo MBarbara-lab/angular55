@@ -7,21 +7,20 @@
         <h2 class="card__title">Veículos</h2>
         <div class="card__content">
             <select>
-                <option value="ranger">Ranger</option>
-                <option value="mustang" selected>Mustang</option>
-                <option value="temtory">Temtory</option>
-                <option value="broncoSport">Bronco Sport</option>
+                @for (car of cars; track car.id) {
+                    <option value="{{ car.id }}">{{ car.vehicle }}</option>
+                }
             </select>
         </div>
     </div>
 
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <app-card [title]="'Total de Vendas'" [value]="selectedCar.volumetotal"></app-card>
+    <app-card [title]="'Conectados'" [value]="selectedCar.connected"></app-card>
+    <app-card [title]="'Update Software'" [value]="selectedCar.softwareUpdates"></app-card>
 </section>
 
 <section class="car-model">
-    <img src="http://localhost:3001/mustang.png" alt="Mustang Ford" class="car-img">
+    <img src="{{ selectedCar.img }}" alt="Mustang Ford" class="car-img">
 </section>
 
 <section>

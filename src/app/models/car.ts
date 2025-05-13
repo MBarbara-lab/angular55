@@ -1,7 +1,7 @@
-type Car = {
+export type Car = {
   id: number
   vehicle: string
-  totalVolume: number
+  volumetotal: number
   connected: number
   softwareUpdates: number
   vin: string
