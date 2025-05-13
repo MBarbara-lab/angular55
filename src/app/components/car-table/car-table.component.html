@@ -11,12 +11,12 @@
     </thead>
     <tbody>
         <tr>
-            <td><input type="text" class="vin-code"></td>
-            <td>t</td>
-            <td>t</td>
-            <td>t</td>
-            <td>t</td>
-            <td>t</td>
+            <td><input type="text" class="vin-code" placeholder="{{ vin }}"></td>
+            <td>{{ odometro }}KM</td>
+            <td>{{ nivelCombustivel }}%</td>
+            <td>{{ status.toLocaleUpperCase() }}</td>
+            <td>{{ lat }}</td>
+            <td>{{ long }}</td>
         </tr>
     </tbody>
 </table>

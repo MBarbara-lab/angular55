@@ -6,7 +6,7 @@
     <div class="card">
         <h2 class="card__title">Veículos</h2>
         <div class="card__content">
-            <select>
+            <select (change)="onChangeSelect($event)">
                 @for (car of cars; track car.id) {
                     <option value="{{ car.id }}">{{ car.vehicle }}</option>
                 }
@@ -24,5 +24,12 @@
 </section>
 
 <section>
-    <app-car-table></app-car-table>
+    <app-car-table
+    [vin]="selectedCar.vin"
+    [odometro]="vinInfos.odometro"
+    [nivelCombustivel]="vinInfos.nivelCombustivel"
+    [status]="vinInfos.status"
+    [lat]="vinInfos.lat"
+    [long]="vinInfos.long"
+    ></app-car-table>
 </section>

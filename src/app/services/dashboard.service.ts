@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Car } from '../models/car';
+import { Car, VinInfos } from '../models/car';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class DashboardService {
     return this.http.get<Car[]>("http://localhost:3001/vehicles")
   }
 
-  getVinInfo() {
-
+  getVinInfos(vin:string) {
+    return this.http.post<VinInfos>("http://localhost:3001/vehicleData", { vin })
   }
 }
