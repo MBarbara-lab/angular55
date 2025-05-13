@@ -18,6 +18,8 @@
 }
 
 .pop-up {
+  display: flex;
+  flex-direction: column;
   width: 30vw;
   height: 50vh;
   position: absolute;
@@ -26,6 +28,11 @@
   background-color: #fff;
   border: 2px solid #777777;
   border-radius: 5px;
+}
+
+.btn-close {
+  position: absolute;
+  align-self: flex-end;
 }
 
 .pop-up__header {
@@ -37,4 +44,11 @@
 .pop-up__text {
   padding: 1vh;
   color: var(--blue);
+}
+
+@media all and (max-width: 670px) {
+  .pop-up {
+    width: 70vw;
+    height: 20vh;
+  }
 }

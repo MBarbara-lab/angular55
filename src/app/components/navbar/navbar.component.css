@@ -1,27 +1,27 @@
 nav {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh;
-    width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh;
+  width: 100vw;
 }
 
 .sidebar-btn,
 .logout-btn {
-    background-size: cover;
-    background-color: #FFF;
-    width: 3vh;
-    height: 3vh;
-    border: none;
+  background-size: cover;
+  background-color: #FFF;
+  width: 3vh;
+  height: 3vh;
+  border: none;
 }
 
 .sidebar-btn {
-    background-image: url(/img/menu.png);
+  background-image: url(/img/menu.png);
 }
 
 .logout-btn {
-    background-image: url(/img/user.png);
+  background-image: url(/img/user.png);
 }
 
 .sidebar {
@@ -45,18 +45,33 @@ nav {
   font-weight: 500;
 }
 
-.sidebar__link > a {
+.sidebar__link>a {
   text-decoration: none;
 }
 
 /* REVERTING BOOTSTRAP */
 ol,
 ul {
-padding-left: 0;
+  padding-left: 0;
 }
 
 ol,
 ul,
 dl {
-margin: 0;
+  margin: 0;
+}
+
+@media all and (max-width: 670px) {
+  .sidebar {
+    width: 40vw
+  }
+
+  .sidebar__logo {
+    width: 50%;
+  }
+
+  .sidebar__link {
+    padding: 2vh 2vh;
+
+  }
 }

@@ -8,5 +8,11 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  closePopUp() {
+    const popUp = document.getElementById("popUp")
 
+    if (popUp) {
+      popUp.style.display = "none"
+    }
+  }
 }
