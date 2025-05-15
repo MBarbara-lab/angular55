@@ -3,13 +3,14 @@ import { CanActivateFn, Router } from '@angular/router';
 
 export const loginGuard: CanActivateFn = (route, state) => {
   const router = inject(Router)
-  const username = sessionStorage.getItem("username")
+
+  const username = (typeof window !== undefined) ? sessionStorage.getItem("username") : null
 
   if (!username) {
     alert("O usuário não está autenticado!")
     router.navigate([""])
     return false
+  } else {
+    return true;
   }
-
-  return true;
 };

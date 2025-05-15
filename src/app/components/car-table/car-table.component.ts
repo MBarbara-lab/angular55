@@ -9,8 +9,8 @@ import { Component, Input } from '@angular/core';
 
 export class CarTableComponent {
   @Input() vin:string = ""
-  @Input() odometro:number = 0
-  @Input() nivelCombustivel:number = 0
+  @Input() odometer:number = 0
+  @Input() fuelLevel:number = 0
   @Input() status:string = ""
   @Input() lat:number = 0
   @Input() long:number = 0

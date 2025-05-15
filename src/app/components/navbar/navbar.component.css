@@ -9,8 +9,11 @@ nav {
 
 .sidebar-btn,
 .logout-btn {
-  background-size: cover;
+  background-size: contain;
   background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+
   width: 3vh;
   height: 3vh;
   border: none;
@@ -21,7 +24,7 @@ nav {
 }
 
 .logout-btn {
-  background-image: url(/img/user.png);
+  background-image: url(/img/logout.png);
 }
 
 .sidebar {

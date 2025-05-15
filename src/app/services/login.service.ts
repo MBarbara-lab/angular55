@@ -12,7 +12,7 @@ export class LoginService {
   http = inject(HttpClient)
 
   login(username: string, password: string): Observable<UserInfos> {
-    return this.http.post<UserInfos>("http://localhost:3001/login", { nome: username, senha: password})
+    return this.http.post<UserInfos>("http://localhost:3001/login", { name: username, password: password})
     .pipe(
       tap(
         (user) => {

@@ -1,7 +1,7 @@
 export type Car = {
   id: number
   vehicle: string
-  volumetotal: number
+  totalVolume: number
   connected: number
   softwareUpdates: number
   vin: string
@@ -10,8 +10,8 @@ export type Car = {
 
 export type VinInfos = {
   id: number
-  odometro: number
-  nivelCombustivel: number
+  odometer: number
+  fuelLevel: number
   status: string
   lat: number
   long: number

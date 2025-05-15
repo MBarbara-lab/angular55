@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <app-card [title]="'Total de Vendas'" [value]="selectedCar.volumetotal"></app-card>
+    <app-card [title]="'Total de Vendas'" [value]="selectedCar.totalVolume"></app-card>
     <app-card [title]="'Conectados'" [value]="selectedCar.connected"></app-card>
     <app-card [title]="'Update Software'" [value]="selectedCar.softwareUpdates"></app-card>
 </section>
@@ -26,8 +26,8 @@
 <section>
     <app-car-table
     [vin]="selectedCar.vin"
-    [odometro]="vinInfos.odometro"
-    [nivelCombustivel]="vinInfos.nivelCombustivel"
+    [odometer]="vinInfos.odometer"
+    [fuelLevel]="vinInfos.fuelLevel"
     [status]="vinInfos.status"
     [lat]="vinInfos.lat"
     [long]="vinInfos.long"
